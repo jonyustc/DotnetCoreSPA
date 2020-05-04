@@ -31,7 +31,7 @@ namespace DatingApp.API.Controllers
             _ctx = ctx;
         }
 
-        [Authorize]
+        
         [Route("Values")]
         public async Task<IActionResult> GetValues()
         {

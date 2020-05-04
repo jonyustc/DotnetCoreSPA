@@ -1,0 +1,23 @@
+<main>
+  <section class="jumbotron text-center h-100">
+    <div class="container">
+      <div *ngIf="!registerMode">
+        <h1>Welcome to Dating App</h1>
+        <p class="lead text-muted">
+          Welcome to my Test Dotnet core angular application.
+        </p>
+        <p>
+          <a href="#" class="btn btn-primary my-2 mr-2" (click)="registerToggle()">Register</a>
+          <a href="#" class="btn btn-secondary my-2">Home</a>
+        </p>
+      </div>
+      <div *ngIf="registerMode" class="container">
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <app-register (cancelRegisterMode)="registerModeCancel($event)"></app-register>      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
