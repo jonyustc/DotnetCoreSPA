@@ -7,8 +7,8 @@
           Welcome to my Test Dotnet core angular application.
         </p>
         <p>
-          <a href="#" class="btn btn-primary my-2 mr-2" (click)="registerToggle()">Register</a>
-          <a href="#" class="btn btn-secondary my-2">Home</a>
+          <a class="btn btn-primary my-2 mr-2" (click)="registerToggle()">Register</a>
+          <a [routerLink]="['/']"  class="btn btn-secondary my-2">Home</a>
         </p>
       </div>
       <div *ngIf="registerMode" class="container">
